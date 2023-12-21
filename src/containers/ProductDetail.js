@@ -28,7 +28,7 @@ const ProductDetails = () => {
         };
     }, [productId]);
     return (
-        <div className="ui grid container">
+        <div className="ui grid container" style={{ margin: "10px 0px 0px 0px" }}>
             {Object.keys(product).length === 0 ? (
                 <div>...Loading</div>
             ) : (
@@ -37,7 +37,7 @@ const ProductDetails = () => {
                         <div className="ui vertical divider">AND</div>
                         <div className="middle aligned row">
                             <div className="column lp">
-                                <img className="ui fluid image" src={image} />
+                                <img className="ui fluid image" style={{ height: "363px", padding: "10px" }} src={image} />
                             </div>
                             <div className="column rp">
                                 <h1>{title}</h1>
@@ -50,7 +50,7 @@ const ProductDetails = () => {
                                     <div className="hidden content">
                                         <i className="shop icon"></i>
                                     </div>
-                                    <div className="visible content">Add to Cart</div> 
+                                    <div className="visible content">Add to Cart</div>
                                 </div>
                             </div>
                         </div>
